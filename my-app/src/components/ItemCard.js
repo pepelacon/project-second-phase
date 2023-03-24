@@ -7,8 +7,6 @@ function ItemCard(item){
             <h3>{category}</h3>
         </div>
 
-
-
     )
 }
 
