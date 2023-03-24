@@ -1,9 +1,10 @@
 import {useState} from "react"
 
-function NewItemForm() {
+
+function NewItemForm({ setItems }) {
     const initialObject = {
     name: "",
-    about: "",
+    description: "",
     price: "",
     rating: 0,
     image: "",
@@ -12,7 +13,29 @@ function NewItemForm() {
    const [newObject, setNewObject] = useState(initialObject)
 
    const handleChange = (e) =>{
-    
+    const {name, value} = e.target
+    setNewObject((prev) => {
+      return{
+        ...prev, [name]:value
+      }
+    })
+   }
+
+   const configObjPost = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newObject)
+   }
+
+   const handleSubmit = (e) => {
+    e.preventDefault()
+    fetch('http://localhost:3001/items',configObjPost)
+    .then((resp) => resp.json())
+    .then(() => {
+      setItems((prev) => [...prev, newObject])
+    })
    }
 
 
@@ -47,19 +70,19 @@ function NewItemForm() {
           value= {newObject.price}
         />
 
-        <label htmlFor="phase">Category</label>
+        <label htmlFor="category">Category</label>
         <select
-          name="phase"
-          id="phase"
+          name="category"
+          id="category"
           onChange={handleChange}
           value={newObject.category}
         >
           <option value="">Pick a Category</option>
-          <option value="1">Home Goods</option>
-          <option value="2">Electronics</option>
-          <option value="3">Fashion</option>
-          <option value="4">Sports</option>
-          <option value="5">Books</option>
+          <option value="Home Goods">Home Goods</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Sports">Sports</option>
+          <option value="Books">Books</option>
         </select>
 
         <label htmlFor="image">Picture</label>
@@ -77,4 +100,4 @@ function NewItemForm() {
     )
 }
 
-ex
+export default NewItemForm;

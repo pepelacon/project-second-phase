@@ -2,7 +2,6 @@ import ItemCard from "./ItemCard"
 
 
 
-
 function ItemsContainer ({items}){
 
 const itemList = items.map(item => (<ItemCard key={item.id} {...item}/>))
@@ -13,9 +12,7 @@ return (
         {itemList}
     </div>
 
-
-) 
-    
+ )   
 }
 
 export default ItemsContainer

@@ -1,55 +1,58 @@
 {
-    "items": [
-      {
-        "id": 1,
-        "name": "Great Outdoors Guide",
-        "about": "Plan your next adventure to in the U.S. National Parks!",
-        "price": 4,
-        "rating": 5,
-        "image": "https://i.imgur.com/8GnP2Uw.png",
-        "category": "Technical"
-        
-      },
-      {
-        "id": 2,
-        "name": "Great Outdoors Guide",
-        "about": "Plan your next adventure to in the U.S. National Parks!",
-        "price": 4,
-        "rating": 5,
-        "image": "https://i.imgur.com/8GnP2Uw.png",
-        "category": "Technical"
-        
-      },
-      {
-        "id": 3,
-        "name": "Great Outdoors Guide",
-        "about": "Plan your next adventure to in the U.S. National Parks!",
-        "price": 4,
-        "rating": 5,
-        "image": "https://i.imgur.com/8GnP2Uw.png",
-        "category": "Technical"
-        
-      },
-      {
-        "id": 4,
-        "name": "Great Outdoors Guide",
-        "about": "Plan your next adventure to in the U.S. National Parks!",
-        "price": 4,
-        "rating": 5,
-        "image": "https://i.imgur.com/8GnP2Uw.png",
-        "category": "Technical"
-        
-      },
-      {
-        "id": 5,
-        "name": "Great Outdoors Guide",
-        "about": "Plan your next adventure to in the U.S. National Parks!",
-        "price": 4,
-        "rating": 5,
-        "image": "https://i.imgur.com/8GnP2Uw.png",
-        "category": "Technical"
-        
-      }
-      
-    ]
-  }
+  "items": [
+    {
+      "id": 1,
+      "name": "Great Outdoors Guide",
+      "description": "Plan your next adventure to in the U.S. National Parks!",
+      "price": 4,
+      "rating": 5,
+      "image": "https://i.imgur.com/8GnP2Uw.png",
+      "category": "Technical"
+    },
+    {
+      "id": 2,
+      "name": "Great Outdoors Guide",
+      "description": "Plan your next adventure to in the U.S. National Parks!",
+      "price": 4,
+      "rating": 5,
+      "image": "https://i.imgur.com/8GnP2Uw.png",
+      "category": "Technical"
+    },
+    {
+      "id": 3,
+      "name": "Great Outdoors Guide",
+      "description": "Plan your next adventure to in the U.S. National Parks!",
+      "price": 4,
+      "rating": 5,
+      "image": "https://i.imgur.com/8GnP2Uw.png",
+      "category": "Technical"
+    },
+    {
+      "id": 4,
+      "name": "Great Outdoors Guide",
+      "description": "Plan your next adventure to in the U.S. National Parks!",
+      "price": 4,
+      "rating": 5,
+      "image": "https://i.imgur.com/8GnP2Uw.png",
+      "category": "Technical"
+    },
+    {
+      "id": 5,
+      "name": "Great Outdoors Guide",
+      "description": "Plan your next adventure to in the U.S. National Parks!",
+      "price": 4,
+      "rating": 5,
+      "image": "https://i.imgur.com/8GnP2Uw.png",
+      "category": "Technical"
+    },
+    {
+      "name": "ss",
+      "description": "sss",
+      "price": "ssss",
+      "rating": 0,
+      "image": "ssss",
+      "category": "",
+      "id": 6
+    }
+  ]
+}
