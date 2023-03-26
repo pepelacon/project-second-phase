@@ -2,9 +2,12 @@ import './App.css';
 import ItemsContainer from "./components/ItemsContainer";
 import NewItemForm from './components/NewItemForm';
 import { useEffect, useState } from 'react';
+import NavBar from './components/NavBar';
+
 
 function App() {
   const [items, setItems] = useState([])
+  const [search, setSearch] = useState("")
 
 
 useEffect(()=>{
@@ -16,8 +19,9 @@ useEffect(()=>{
 
   return (
     <div className="App">
+      <NavBar setSearch={setSearch} />
       <NewItemForm setItems={setItems} />
-      <ItemsContainer items={items}/>
+      <ItemsContainer items={items} search={search}/>
     </div>
   );
 }

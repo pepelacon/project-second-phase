@@ -5,7 +5,9 @@ function ItemCard(item){
             <h3>{name}</h3>
             <h3>{price}</h3>
             <h3>{category}</h3>
-        </div>
+            <button>Add to Basket</button>
+            <button>Delete</button>
+        </div>  
 
     )
 }

@@ -1,10 +1,12 @@
 import ItemCard from "./ItemCard"
 
+function ItemsContainer ({items, search}){
 
-
-function ItemsContainer ({items}){
-
-const itemList = items.map(item => (<ItemCard key={item.id} {...item}/>))
+    const filterItems = items.filter((item) => (
+        item.name.toLowerCase().includes(search.toLowerCase())
+    ))
+    
+const itemList = filterItems.map(item => (<ItemCard key={item.id} {...item}/>))
 
 return (
     <div className="container">
