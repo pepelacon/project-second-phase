@@ -12,7 +12,7 @@ function ItemsContainer ({items, search, setBasketItem}){
 const itemList = filterItems.map(item => (<ItemCard key={item.id} {...item} setBasketItem={setBasketItem}/>))
 
 return (
-    <div >
+    <div className='grid2'>
         <h1>Items</h1>
         <div className="container">
             {itemList}
