@@ -1,9 +1,10 @@
 .container {
     display: flex;
+    grid-template-columns: 4;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;    
+    column-gap: 20px;
+    width: 60%
+    
 }
 
-.grid2 {
-    align-self: flex-end;
-}

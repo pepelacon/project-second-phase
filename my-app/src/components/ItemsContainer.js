@@ -1,5 +1,6 @@
 import './ItemsContainer.css'
 import ItemCard from "./ItemCard"
+import Basket from './Basket';
 
 function ItemsContainer ({items, search, setBasketItem, filter}){
 
@@ -11,7 +12,7 @@ const filteredItems = filter === "All" ? items  : items.filter((el) => el.catego
 const itemList = filterItems.map(item => (<ItemCard key={item.id} {...item} setBasketItem={setBasketItem}/>))
 
 return (
-    <div className='grid2'>
+    <div>
         <h1>Items</h1>
         <div className="container">
             {itemList}

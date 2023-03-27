@@ -1,8 +1,11 @@
 import {useState} from "react"
 import "./NewItemForm.css"
+import { useNavigate } from "react-router-dom"
 
 
 function NewItemForm({ setItems }) {
+  const navigate = useNavigate()
+
     const initialObject = {
     name: "",
     description: "",
@@ -36,6 +39,7 @@ function NewItemForm({ setItems }) {
     .then((resp) => resp.json())
     .then(() => {
       setItems((prev) => [...prev, newObject])
+      navigate("/")
     })
    }
 

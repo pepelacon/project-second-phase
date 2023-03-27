@@ -143,6 +143,33 @@
       "image": "",
       "category": "",
       "id": 16
+    },
+    {
+      "name": "Helicopter",
+      "description": "A very cool helicopter",
+      "price": "1,000,000",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71t33YmuRqL.jpg",
+      "category": "Electronics",
+      "id": 17
+    },
+    {
+      "name": "Helicopter",
+      "description": "A very cool helicopter",
+      "price": "1,000,000",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71t33YmuRqL.jpg",
+      "category": "Electronics",
+      "id": 18
+    },
+    {
+      "name": "One Shoe",
+      "description": "Only the left shoe :(",
+      "price": "5",
+      "rating": 0,
+      "image": "https://thumbs.dreamstime.com/z/woman-one-shoe-city-legs-feet-young-wearing-sitting-edge-monument-62786419.jpg",
+      "category": "Fashion",
+      "id": 19
     }
   ]
 }
