@@ -24,6 +24,7 @@ function App() {
     setItemCounts((prev) => {return { ...prev, [item.id]: 1 }})
   }}
 
+  console.log(itemCounts);
     
   const checkOut = () =>{
     addItemToBasket([])

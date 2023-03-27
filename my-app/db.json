@@ -2,57 +2,48 @@
   "items": [
     {
       "id": 1,
-      "name": "Great Outdoors Guide",
-      "description": "Plan your next adventure to in the U.S. National Parks!",
-      "price": 4,
+      "name": "Joe Zander Chair",
+      "description": "",
+      "price": "$15,000",
       "rating": 5,
-      "image": "https://i.imgur.com/8GnP2Uw.png",
-      "category": "Technical"
+      "image": "https://static.designboom.com/wp-content/dbsub/452926/2023-02-09/studio-danucio-future-avantgarde-everything-is-possible-8-63e51ebeab4d6.jpg",
+      "category": "Home Goods"
     },
     {
       "id": 2,
-      "name": "Great Outdoors Guide",
-      "description": "Plan your next adventure to in the U.S. National Parks!",
-      "price": 4,
+      "name": "PlayStation VR2",
+      "description": "Virtual reality set",
+      "price": "$1,000",
       "rating": 5,
-      "image": "https://i.imgur.com/8GnP2Uw.png",
-      "category": "Technical"
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/vr2-comfort-and-design-headset-2?fmt=png-alpha&scl=1",
+      "category": "Electronics"
     },
     {
       "id": 3,
-      "name": "Great Outdoors Guide",
-      "description": "Plan your next adventure to in the U.S. National Parks!",
-      "price": 4,
+      "name": "Travis Scott AJ1",
+      "description": "Air Jordan 1's designed by Travis Scott",
+      "price": "$1,350",
       "rating": 5,
-      "image": "https://i.imgur.com/8GnP2Uw.png",
-      "category": "Technical"
+      "image": "https://sneakernews.com/wp-content/uploads/2022/06/travis-scott-air-jordan-1-low-og-dm7866-162-5.jpg",
+      "category": "Fashion"
     },
     {
       "id": 4,
-      "name": "Great Outdoors Guide",
-      "description": "Plan your next adventure to in the U.S. National Parks!",
-      "price": 4,
+      "name": "Lebron James Rookie card",
+      "description": "Collectable NBA Rookie card",
+      "price": "$5,200,000",
       "rating": 5,
-      "image": "https://i.imgur.com/8GnP2Uw.png",
-      "category": "Technical"
+      "image": "https://hoopshype.com/wp-content/uploads/sites/92/2022/10/lebron-57-99-rookie.jpeg",
+      "category": "Sports"
     },
     {
       "id": 5,
-      "name": "Great Outdoors Guide",
-      "description": "Plan your next adventure to in the U.S. National Parks!",
-      "price": 4,
+      "name": "The Book",
+      "description": "Philosophy by Alan Watts",
+      "price": "24.95",
       "rating": 5,
-      "image": "https://i.imgur.com/8GnP2Uw.png",
-      "category": "Technical"
-    },
-    {
-      "name": "ss",
-      "description": "sss",
-      "price": "ssss",
-      "rating": 0,
-      "image": "ssss",
-      "category": "",
-      "id": 6
+      "image": "https://i.ebayimg.com/images/g/kd8AAOSwZjVj6prj/s-l1600.jpg",
+      "category": "Books"
     }
   ]
 }

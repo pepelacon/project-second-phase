@@ -1,5 +1,6 @@
 function ShopCard(item){
     const {id, name, price, category, setBasketItem, itemCounts, addQuatity} = item;
+   
     const cartItemAmount = itemCounts[id]
 
     return (
