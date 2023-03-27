@@ -1,4 +1,5 @@
 import {useState} from "react"
+import "./NewItemForm.css"
 
 
 function NewItemForm({ setItems }) {
@@ -40,12 +41,15 @@ function NewItemForm({ setItems }) {
 
 
     return(
-        <section>
+        <section className="section-form">
         <form className="form" autoComplete="off" onSubmit={handleSubmit}>
-        <h3>Add New Product</h3>
-
-        <label htmlFor="name">Product Name</label>
+          <div className="subtitle">
+            <h3>Add New Product</h3>
+          </div>
+        
+        <label htmlFor="name" >Product Name</label>
         <input
+          className="form-input"
           type="text"
           id="name"
           name="name"
@@ -55,14 +59,17 @@ function NewItemForm({ setItems }) {
 
         <label htmlFor="about">Description</label>
         <textarea
+          className="form-input textarea" 
           id="description"
           name="description"
           onChange={handleChange}
           value= {newObject.description}
         />
 
+
         <label htmlFor="about">Price</label>
         <input
+          className="form-input"
           type= "text"
           id="price"
           name="price"
@@ -72,6 +79,7 @@ function NewItemForm({ setItems }) {
 
         <label htmlFor="category">Category</label>
         <select
+          className="form-input"
           name="category"
           id="category"
           onChange={handleChange}
@@ -87,6 +95,7 @@ function NewItemForm({ setItems }) {
 
         <label htmlFor="image">Picture</label>
         <input
+          className="form-input"
           type="text"
           id="image"
           name="image"
@@ -94,10 +103,31 @@ function NewItemForm({ setItems }) {
           value={newObject.image}
         />
 
-        <button type="submit">Add Product</button>
+        <button className="button" type="submit">Add Product</button>
       </form>
     </section>
     )
 }
 
 export default NewItemForm;
+
+
+{/* <div class="form">
+<div class="subtitle">Let's create your account!</div>
+<div class="input-container ic1">
+  <input id="firstname" class="input" type="text" placeholder="">
+  <div class="cut"></div>
+  <label for="firstname" class="placeholder">First name</label>
+</div>
+<div class="input-container ic2">
+  <input id="lastname" class="input" type="text" placeholder="">
+  <div class="cut"></div>
+  <label for="lastname" class="placeholder">Last name</label>
+</div>
+<div class="input-container ic2">
+  <input id="email" class="input" type="text" placeholder="">
+  <div class="cut cut-short"></div>
+  <label for="email" class="placeholder">Email
+</label></div>
+<button type="text" class="submit">submit</button>
+</div> */}

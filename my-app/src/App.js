@@ -28,7 +28,7 @@ function App() {
     setItemCounts((prev) => {return { ...prev, [item.id]: 1 }})
   }}
 
-    
+  console.log(basketItem)
   const checkOut = () =>{
     addItemToBasket([])
     setItemCounts({})
@@ -44,16 +44,18 @@ useEffect(()=>{
   return (
     <div className="App">
       <NavBar setSearch={setSearch} 
-        basketItem={basketItem} 
-        itemCounts={itemCounts} 
-        checkOut={checkOut} 
-        addItemToBasket={addItemToBasket}
+        // basketItem={basketItem} 
+        // itemCounts={itemCounts} 
+        // checkOut={checkOut} 
+        // addItemToBasket={addItemToBasket}
       />
     <Routes>
       <Route path="/" element={<ItemsContainer items={items} search={search} setBasketItem={setBasketItem}/>}/>
-      {/* <Route path='/basket' element={<Basket basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} addItemToBasket={addItemToBasket}/>} /> */}
+
+     {/* <Route path="/basket" element={<Basket basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} addItemToBasket={addItemToBasket}/>} /> */}
       <Route path="/form" element={<NewItemForm setItems={setItems} />} />
     </Routes>
+    <Basket basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} addItemToBasket={addItemToBasket}/>
     </div>
   );
 }
