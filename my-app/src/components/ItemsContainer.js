@@ -1,3 +1,4 @@
+import './ItemsContainer.css'
 import ItemCard from "./ItemCard"
 
 function ItemsContainer ({items, search, setBasketItem}){
@@ -11,12 +12,16 @@ function ItemsContainer ({items, search, setBasketItem}){
 const itemList = filterItems.map(item => (<ItemCard key={item.id} {...item} setBasketItem={setBasketItem}/>))
 
 return (
-    <div className="container">
+    <div >
         <h1>Items</h1>
-        {itemList}
+        <div className="container">
+            {itemList}
+        </div>
     </div>
 
  )   
 }
 
 export default ItemsContainer
+
+
