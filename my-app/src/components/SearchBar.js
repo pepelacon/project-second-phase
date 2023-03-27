@@ -1,4 +1,4 @@
-
+import "./NavBar.css"
 
 
 function SearchBar({ setSearch }) {
@@ -9,7 +9,7 @@ function SearchBar({ setSearch }) {
 
     return(
         <div>
-            <input type="text" placeholder="Search..." onChange={handleChange} >
+            <input className="search" type="text" placeholder="Search..." onChange={handleChange} >
 
             </input>
         </div>

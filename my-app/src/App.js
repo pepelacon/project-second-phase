@@ -1,8 +1,10 @@
 import './App.css';
+import { Routes, Route } from "react-router-dom"
 import ItemsContainer from "./components/ItemsContainer";
 import NewItemForm from './components/NewItemForm';
 import { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
+import Basket from './components/Basket';
 // import "semantic-ui-css/semantic.min.css";
 
 
@@ -15,6 +17,7 @@ function App() {
 
   const setBasketItem = (item) => {
   const selected = basketItem.find((el) => el.id === item.id)
+  console.log(basketItem);
   if (selected) { 
     setItemCounts((prev) => {
       const count = prev[item.id] 
@@ -25,7 +28,6 @@ function App() {
     setItemCounts((prev) => {return { ...prev, [item.id]: 1 }})
   }}
 
-  console.log(itemCounts);
     
   const checkOut = () =>{
     addItemToBasket([])
@@ -47,8 +49,11 @@ useEffect(()=>{
         checkOut={checkOut} 
         addItemToBasket={addItemToBasket}
       />
-      <NewItemForm setItems={setItems} />
-      <ItemsContainer items={items} search={search} setBasketItem={setBasketItem}/>
+    <Routes>
+      <Route path="/" element={<ItemsContainer items={items} search={search} setBasketItem={setBasketItem}/>}/>
+      {/* <Route path='/basket' element={<Basket basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} addItemToBasket={addItemToBasket}/>} /> */}
+      <Route path="/form" element={<NewItemForm setItems={setItems} />} />
+    </Routes>
     </div>
   );
 }
