@@ -12,21 +12,22 @@ function App() {
   const [itemCounts, setItemCounts] = useState({ });
 
 
-   const setBasketItem = (item) => {
-    const selected = basketItem.find((el) => el.id === item.id)
-    if (selected) { 
-      setItemCounts((prev) => {
-        const count = prev[item.id] || 1;
-        return { ...prev, [item.id]: count + 1 };
-      })
-    } else {
-      addItemToBasket(() => [...basketItem, item]);
-    }}
+  const setBasketItem = (item) => {
+  const selected = basketItem.find((el) => el.id === item.id)
+  if (selected) { 
+    setItemCounts((prev) => {
+      const count = prev[item.id] 
+      return { ...prev, [item.id]: count + 1 };
+    })
+  } else {
+    addItemToBasket(() => [...basketItem, item]);
+    setItemCounts((prev) => {return { ...prev, [item.id]: 1 }})
+  }}
 
-    // const match = basketItem.some((item1) => itemCounts.some((item2) => item2.id === item1.id))
-    // console.log(match);
+    
   const checkOut = () =>{
     addItemToBasket([])
+    setItemCounts({})
   }
 
 useEffect(()=>{
