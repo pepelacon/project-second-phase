@@ -9,33 +9,25 @@ function App() {
   const [items, setItems] = useState([])
   const [search, setSearch] = useState("")
   const [basketItem, addItemToBasket] = useState([])
-  const [count, setCount] = useState(1)
-
-    const tempArray = basketItem.map((item)=>{
-    return  {...item, quantity: count}
-    })
-
-  const setBasketItem = (clickedItem)=>{
-  //   if (!tempArray.includes(clickedItem)){
-  //   addItemToBasket((prev) => [...prev, clickedItem])
-  //  }   else if (tempArray.includes(clickedItem)){
-  //     setCount((count)=>(count + 1))
-  //  }
-   }
-
-   console.log(count);
-   console.log(basketItem);
-   console.log(tempArray)
-// setCount((count)=>(count + 1))
-    // return {...prev, quantity: count}
-  
+  const [itemCounts, setItemCounts] = useState({ });
 
 
+   const setBasketItem = (item) => {
+    const selected = basketItem.find((el) => el.id === item.id)
+    if (selected) { 
+      setItemCounts((prev) => {
+        const count = prev[item.id] || 1;
+        return { ...prev, [item.id]: count + 1 };
+      })
+    } else {
+      addItemToBasket(() => [...basketItem, item]);
+    }}
 
+    // const match = basketItem.some((item1) => itemCounts.some((item2) => item2.id === item1.id))
+    // console.log(match);
   const checkOut = () =>{
     addItemToBasket([])
   }
-
 
 useEffect(()=>{
   fetch("http://localhost:3001/items")
@@ -46,7 +38,12 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      <NavBar setSearch={setSearch} basketItem={basketItem} checkOut={checkOut}/>
+      <NavBar setSearch={setSearch} 
+        basketItem={basketItem} 
+        itemCounts={itemCounts} 
+        checkOut={checkOut} 
+        addItemToBasket={addItemToBasket}
+      />
       <NewItemForm setItems={setItems} />
       <ItemsContainer items={items} search={search} setBasketItem={setBasketItem}/>
     </div>

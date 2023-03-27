@@ -1,30 +1,16 @@
-import ItemCard from "./ItemCard";
+import ShopCard from "./ShopCard";
 import { useState } from "react";
 
 
-function Basket ({basketItem, checkOut}) {
-    // const [count, setCount] = useState(1)
+function Basket ({basketItem, checkOut, itemCounts, addItemToBasket}) {
+    const [counter, setCounter] = useState(0)
 
-    // const tempArray = basketItem.map((item)=>{
-    //  return  {...item, quantity: count}
-    // })
-
-    // const countedAmount = basketItem.reduce((item, current)=>{
-    //     if (current in item){
-    //         setCount((prev)=>(prev + 1))
-    //     } return item
-    // }, {})
-
-   
-    
-
+  console.log(itemCounts);
 
    const basketItemList = basketItem.map((item)=>(
-    <ItemCard key={item.id} {...item} /> 
+    <ShopCard key={item.id} itemCounts={itemCounts} {...item} /> 
    )) 
-
-  
-
+ 
     return(
         <div>
          {basketItemList}

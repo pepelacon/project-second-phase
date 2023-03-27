@@ -1,6 +1,8 @@
 function ItemCard(item){
-    const {name, price, category, setBasketItem} = item;
+    const {id, name, price, category, setBasketItem, addQuatity} = item;
 
+    
+    
     return (
         <div className="row item-card">
             <h3>{name}</h3>
