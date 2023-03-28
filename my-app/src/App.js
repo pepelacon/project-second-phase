@@ -18,8 +18,7 @@ function App() {
 
   const setBasketItem = (item) => {
   const selected = basketItem.find((el) => el.id === item.id)
-  console.log(basketItem);
-  if (selected) { 
+    if (selected) { 
     setItemCounts((prev) => {
       const count = prev[item.id] 
       return { ...prev, [item.id]: count + 1 };
