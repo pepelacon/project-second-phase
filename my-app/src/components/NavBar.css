@@ -13,3 +13,9 @@
     width: 100%;
     border-radius: .2rem;
 }
+
+.filter-buttons {
+    display: flex;
+   justify-content: center;
+   grid-column: 2;
+}

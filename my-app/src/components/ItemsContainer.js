@@ -5,7 +5,7 @@ function ItemsContainer ({items, search, setBasketItem}){
 
 
 
-    const filterItems = items.filter((item) => (
+    const filterItems = items?.filter((item) => (
         item.name.toLowerCase().includes(search.toLowerCase())
     ))
     

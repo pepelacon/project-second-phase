@@ -5,7 +5,8 @@ import NewItemForm from './components/NewItemForm';
 import { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
 import Basket from './components/Basket';
-
+import Filter from './components/Filter';
+import Item from './components/Item';
 // import "semantic-ui-css/semantic.min.css";
 
 
@@ -14,6 +15,7 @@ function App() {
   const [search, setSearch] = useState("")
   const [basketItem, addItemToBasket] = useState([])
   const [itemCounts, setItemCounts] = useState({ });
+  const [filterClick, setFilterClick] = useState('All')
 
 
   const setBasketItem = (item) => {
@@ -41,11 +43,19 @@ useEffect(()=>{
 },[]);
 
 
+const handleClick = (param) => {
+  const filterItem = param === 'All' ? items : items.filter((item) => (item.category === param))
+   setFilterClick(filterItem)
+}
+console.log(filterClick)
+
   return (
     <div className="App">
       <NavBar setSearch={setSearch}/>
+      <Filter items={items} setItems={setItems} handleClick={handleClick}/>
       <Routes>
           <Route path="/" element={<ItemsContainer items={items} search={search} setBasketItem={setBasketItem}/>}/>
+          <Route path='/items/:id' element={<Item/>} />
           <Route path="/basket" element={<Basket basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} addItemToBasket={addItemToBasket}/>} />
           <Route path="/form" element={<NewItemForm setItems={setItems} />} />
       </Routes>
