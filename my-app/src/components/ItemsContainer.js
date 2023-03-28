@@ -1,11 +1,10 @@
 import './ItemsContainer.css'
 import ItemCard from "./ItemCard"
 
-function ItemsContainer ({items, search, setBasketItem}){
+function ItemsContainer ({items, search, setBasketItem, filter}){
 
-
-
-    const filterItems = items?.filter((item) => (
+const filteredItems = filter === "All" ? items  : items.filter((el) => el.category === filter);
+    const filterItems = filteredItems.filter((item) => (
         item.name.toLowerCase().includes(search.toLowerCase())
     ))
     
