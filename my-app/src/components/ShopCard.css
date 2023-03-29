@@ -3,6 +3,9 @@
     justify-content: center;
     margin: 20px;
     text-align: left;
+    align-self: center;
+    align-items: center;
+    margin: 10px
 }
 
 .grid {
@@ -11,12 +14,23 @@
 
 .grid1 {
     flex-basis: 20%;
+    margin: 0;
   }
   
 .grid2 {
     flex-basis: 5%;
+    margin: 0;
+    text-align: center;
   }
   
 .grid3 {
     flex-basis: 10%;
+    margin: 0 0 0 20px;
+    width: 100px;
   }
+
+.grid4 {
+  flex-basis: 10%;
+  margin: 0 0 0 20px;
+  width: 100px;
+}

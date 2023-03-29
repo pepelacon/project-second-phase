@@ -17,6 +17,8 @@ function App() {
   const [itemCounts, setItemCounts] = useState({ });
   const [filter, setFilter] = useState('All')
   const [basketQuantity, setBasketQuantity] = useState(0)
+  const [array, setArray] = useState([])
+  
 
 
   const setBasketItem = (item) => {
@@ -29,12 +31,16 @@ function App() {
       const count = prev[item.id] 
       return { ...prev, [item.id]: count + 1 };
     })
+    const updatedBasket = basketItem.map((el) => {return el.id === item.id ? {...el, count: 1} : el})
+    console.log(updatedBasket);
+    // addItemToBasket(prev => )
   } else {
     addItemToBasket(() => [...basketItem, item]);
     setItemCounts((prev) => {return { ...prev, [item.id]: 1 }})
+    
   }
-  
 }
+
 
 
   const deleteElement = (deletedItem)=>{
@@ -67,7 +73,7 @@ const handleClick = (param) => {
       <Routes>
           <Route path="/" element={<ItemsContainer items={items} search={search} setBasketItem={setBasketItem} filter={filter}/>}/>
           <Route path='/items/:id' element={<Item/>} />
-          <Route path="/basket" element={<Basket deleteElement={deleteElement} basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} setBasketQuantity={setBasketQuantity}addItemToBasket={addItemToBasket}/>} />
+          <Route path="/basket" element={<Basket deleteElement={deleteElement}  basketItem={basketItem} checkOut={checkOut} itemCounts={itemCounts} setBasketQuantity={setBasketQuantity} setItemCounts={setItemCounts} addItemToBasket={addItemToBasket}/>} />
           <Route path="/form" element={<NewItemForm setItems={setItems} />} />
       </Routes>
       

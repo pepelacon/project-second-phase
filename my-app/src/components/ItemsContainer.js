@@ -2,14 +2,14 @@ import './ItemsContainer.css'
 import ItemCard from "./ItemCard"
 import Basket from './Basket';
 
-function ItemsContainer ({items, search, setBasketItem, filter}){
+function ItemsContainer ({items, search, setBasketItem, filter, setTotalCost}){
 
 const filteredItems = filter === "All" ? items  : items.filter((el) => el.category === filter);
     const filterItems = filteredItems.filter((item) => (
         item.name.toLowerCase().includes(search.toLowerCase())
     ))
     
-const itemList = filterItems.map(item => (<ItemCard key={item.id} {...item} setBasketItem={setBasketItem}/>))
+const itemList = filterItems.map(item => (<ItemCard key={item.id} setTotalCost={setTotalCost} {...item} setBasketItem={setBasketItem}/>))
 
 return (
     <div>

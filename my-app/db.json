@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Joe Zander Chair",
-      "description": "",
-      "price": "$15,000",
+      "description": "A chair is a type of seat, typically designed for one person and consisting of one or more legs, a flat or slightly angled seat and a back-rest. They may be made of wood, metal, or synthetic materials, and may be padded or upholstered in various colors and fabrics.",
+      "price": "15,000",
       "rating": 5,
       "image": "https://static.designboom.com/wp-content/dbsub/452926/2023-02-09/studio-danucio-future-avantgarde-everything-is-possible-8-63e51ebeab4d6.jpg",
       "category": "Home Goods"
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "PlayStation VR2",
       "description": "Virtual reality set",
-      "price": "$1,000",
+      "price": "1,000",
       "rating": 5,
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/vr2-comfort-and-design-headset-2?fmt=png-alpha&scl=1",
       "category": "Electronics"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Travis Scott AJ1",
       "description": "Air Jordan 1's designed by Travis Scott",
-      "price": "$1,350",
+      "price": "1,350",
       "rating": 5,
       "image": "https://sneakernews.com/wp-content/uploads/2022/06/travis-scott-air-jordan-1-low-og-dm7866-162-5.jpg",
       "category": "Fashion"
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Lebron James Rookie card",
       "description": "Collectable NBA Rookie card",
-      "price": "$5,200,000",
+      "price": "5,200,000",
       "rating": 5,
       "image": "https://hoopshype.com/wp-content/uploads/sites/92/2022/10/lebron-57-99-rookie.jpeg",
       "category": "Sports"
@@ -45,105 +45,7 @@
       "image": "https://i.ebayimg.com/images/g/kd8AAOSwZjVj6prj/s-l1600.jpg",
       "category": "Books"
     },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 6
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 7
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 8
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 9
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 10
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 11
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 12
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 13
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 14
-    },
-    {
-      "name": "dewdew",
-      "description": "ergtrgtr",
-      "price": "gtrgtr",
-      "rating": 0,
-      "image": "gtrgtr",
-      "category": "Electronics",
-      "id": 15
-    },
-    {
-      "name": "",
-      "description": "",
-      "price": "",
-      "rating": 0,
-      "image": "",
-      "category": "",
-      "id": 16
-    },
+    
     {
       "name": "Helicopter",
       "description": "A very cool helicopter",
@@ -152,15 +54,6 @@
       "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71t33YmuRqL.jpg",
       "category": "Electronics",
       "id": 17
-    },
-    {
-      "name": "Helicopter",
-      "description": "A very cool helicopter",
-      "price": "1,000,000",
-      "rating": 0,
-      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71t33YmuRqL.jpg",
-      "category": "Electronics",
-      "id": 18
     },
     {
       "name": "One Shoe",
@@ -179,24 +72,6 @@
       "image": "https://cdn.shopify.com/s/files/1/1771/0049/products/tripine-trucker-hat-charcoal-silver_700x.jpg?v=1652710853",
       "category": "Fashion",
       "id": 20
-    },
-    {
-      "name": "",
-      "description": "",
-      "price": "",
-      "rating": 0,
-      "image": "",
-      "category": "",
-      "id": 21
-    },
-    {
-      "name": "",
-      "description": "",
-      "price": "",
-      "rating": 0,
-      "image": "",
-      "category": "",
-      "id": 22
     }
   ]
 }
