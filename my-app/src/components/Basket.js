@@ -5,17 +5,33 @@ import "./Basket.css"
 import {FaHome} from 'react-icons/fa'
 
 
-function Basket ({basketItem, checkOut, itemCounts, deleteElement, setBasketQuantity, setItemCounts}) {
-    const [totalForItem, setTotalForItem] = useState([])
-    const [totalCost, setTotal] = useState(0)
+function Basket ({basketItem, checkOut, addItemToBasket}) {
 
-    
+const addQuantity = (product) => {
+    const updateCount = basketItem.map((el) => (el.id === product.id ? {...el, count: el.count + 1 } : el))
+    addItemToBasket(updateCount)
+}
 
+const removeQuantity = (product) => {
+    const removeCount = basketItem.map((el) => { return el.count > 0 && el.id === product.id ? {...el, count: el.count - 1 } : el })
+    addItemToBasket(removeCount)
+}
+
+const deleteElement = (product) => {
+    const deletedItem = basketItem.filter((el) => el.id !== product.id)
+    addItemToBasket(deletedItem)
+}
+
+    // addItemToBasket((prev) => ({...prev, count: count + 1 }))
    const basketItemList = basketItem.map((item)=>(
-    <ShopCard key={item.id} itemCounts={itemCounts} totalCost={totalCost} setItemCounts={setItemCounts} setTotal={setTotal} setTotalForItem={setTotalForItem} {...item} deleteElement={deleteElement} setBasketQuantity={setBasketQuantity}/> 
+    <ShopCard key={item.id} {...item} addQuantity={addQuantity} removeQuantity={removeQuantity} deleteElement={deleteElement}/> 
    )) 
 
-   console.log(totalCost);
+    const total = basketItem.reduce((acc, cur) => {
+        const priceInt = parseFloat(cur.price.replaceAll(',', ''))
+        return acc + (cur.count * priceInt )
+   }, 0 )
+
 
    const navigate = useNavigate()
 
@@ -30,9 +46,9 @@ function Basket ({basketItem, checkOut, itemCounts, deleteElement, setBasketQuan
             {basketItemList}
          </div>
          <div>
-            <h3>Total Price: {totalCost}</h3>
+            <h3>Total Price: ${total}</h3>
         </div>
-        <button onClick={checkOut}>Check Out</button>
+        <button>Check Out</button>
         {/* <FaHome onClick={()=>{navigate("/")}}/> */}
         <button onClick={()=>{navigate("/")}}><FaHome/></button>
     </div>

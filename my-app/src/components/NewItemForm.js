@@ -1,6 +1,7 @@
 import {useState} from "react"
 import "./NewItemForm.css"
 import { useNavigate } from "react-router-dom"
+import {FaHome} from 'react-icons/fa'
 
 
 
@@ -109,7 +110,10 @@ function NewItemForm({ setItems }) {
         />
 
         <button className="button" type="submit">Add Product</button>
+        <br />
+        <button className="home" onClick={()=>{navigate("/")}}><FaHome/></button>
       </form>
+     
     </section>
     )
 }
