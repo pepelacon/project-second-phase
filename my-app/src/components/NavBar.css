@@ -1,21 +1,110 @@
 .nav-bar {
     background-color: #ffcaa6;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    justify-content: space-between;
     padding: .5rem 1rem;
+    align-items: center;
+    height: 75px;
 }
 
+.item {
+    width: 15%;
+}
 .logo {
+    padding: 0;
+    margin: 0;
+    padding-right: 40px;
     height: 3rem;
+    /* justify-content: flex-start; */
 }
 
 .search {
-    width: 100%;
+    align-items: center;
+    align-self: auto;
     border-radius: .2rem;
+    /* flex-basis: 0; */
+    flex-grow: 0.75;
 }
 
-.filter-buttons {
-    display: flex;
-   justify-content: center;
-   grid-column: 2;
+
+.icon {
+    width: 40px;
+    height: 40px;
 }
+
+.sign {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    /* margin-top: 5px; */
+}
+
+.icon {
+    padding-right: 5px ;
+    margin: 5px 5px 0 0;
+    color: olivedrab
+}
+
+.icon:hover {
+    color: #4a1111;
+}
+/* .add {
+    color: olivedrab; 
+    font-weight: "bold"; 
+    font-size: larger;
+    font-family: "San Francisco";
+    margin-bottom: 3px;
+}
+
+.add:hover {
+    color:aqua
+} */
+
+
+button {
+    font-size: 18px;
+    color: olivedrab;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #4a1111;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #380f0f;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }

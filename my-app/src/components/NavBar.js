@@ -4,31 +4,51 @@ import './NavBar.css'
 import {Link} from "react-router-dom"
 import SignUp from './SignUp';
 import SignOut from './SignOut';
+import { CiShoppingCart } from "react-icons/ci"
 import { useAuth0 } from "@auth0/auth0-react"
-function NavBar({ setSearch, basketItem, checkOut, itemCounts, addItemToBasket}) {
-const {user, isAuthenticated} = useAuth0()
 
+
+function NavBar({ setSearch }) {
+const {user, isAuthenticated} = useAuth0()
 
 if (isAuthenticated) {
     return(
         <div className="nav-bar">
-            <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf1_jXuwLxDGN4IJ9LWKmCBaICJLDfzyzdA&usqp=CAU" alt="Buy Sell"/>
-            <SearchBar setSearch={setSearch} />
-            <SignOut />
-            <Link to = {"/form"}>
-                <button>Add New Product</button>
-            </Link>
-            <Link to = {"/basket"}>
-                <button>Basket</button>
-            </Link>
+            <div className="item logo">
+                <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf1_jXuwLxDGN4IJ9LWKmCBaICJLDfzyzdA&usqp=CAU" alt="Buy Sell"/>
+            </div>
+            <div className="item search">
+                <SearchBar setSearch={setSearch} />
+            </div>
+            <div className="item sign">
+                
+                <Link to = {"/form"}>
+                    <button>Add Product</button>
+                    {/* <h6 className="add">Add New Product</h6> */}
+                </Link>
+
+                <div className="down">
+                    <Link to = {"/basket"}>
+                        <CiShoppingCart className="icon"/>
+                        {/* <button>Basket<CiShoppingCart/></button> */}
+                    </Link>
+                    <SignOut />
+                </div>
+            </div>
         </div>
     )
 } else if (!isAuthenticated) {
     return (
         <div className="nav-bar">
-            <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf1_jXuwLxDGN4IJ9LWKmCBaICJLDfzyzdA&usqp=CAU" alt="Buy Sell"/>
-            <SearchBar setSearch={setSearch} />
-            <SignUp />
+            <div className="item logo">
+                <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf1_jXuwLxDGN4IJ9LWKmCBaICJLDfzyzdA&usqp=CAU" alt="Buy Sell"/>
+            </div>
+            <div className="item search">
+                <SearchBar setSearch={setSearch} />
+            </div>
+            <div className="item sign">
+                <SignUp />
+            </div>
         </div>
     )
 }

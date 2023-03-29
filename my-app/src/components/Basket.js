@@ -2,18 +2,16 @@ import ShopCard from "./ShopCard";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Basket.css"
+import {FaHome} from 'react-icons/fa'
 
 
 function Basket ({basketItem, checkOut, itemCounts, deleteElement, addItemToBasket}) {
  
 
-
-//   console.log(itemCounts);
-//   console.log(basketItem)
-
    const basketItemList = basketItem.map((item)=>(
     <ShopCard key={item.id} itemCounts={itemCounts} {...item} deleteElement={deleteElement} /> 
    )) 
+
    const navigate = useNavigate()
  
     return(
@@ -30,8 +28,8 @@ function Basket ({basketItem, checkOut, itemCounts, deleteElement, addItemToBask
             <h3>Total Price:</h3>
         </div>
         <button onClick={checkOut}>Check Out</button>
-
-        <button onClick={()=>{navigate("/")}}>Home Page</button>
+        <FaHome onClick={()=>{navigate("/")}}/>
+        <button onClick={()=>{navigate("/")}}><FaHome/></button>
     </div>
     )
 }

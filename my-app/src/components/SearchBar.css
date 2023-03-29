@@ -1,4 +1,6 @@
 .input {
+  display: block;
+  margin: auto;
     border-radius: 10px;
     outline: 2px solid #FEBF00;
     border: 0;
@@ -7,7 +9,10 @@
     outline-offset: 3px;
     padding: 10px 1rem;
     transition: 0.25s;
-    width: 200%;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+   
   }
   
   .input:focus {
