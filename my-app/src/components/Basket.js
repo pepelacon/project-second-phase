@@ -5,11 +5,11 @@ import "./Basket.css"
 import {FaHome} from 'react-icons/fa'
 
 
-function Basket ({basketItem, checkOut, itemCounts, deleteElement, addItemToBasket}) {
+function Basket ({basketItem, checkOut, itemCounts, deleteElement, setBasketQuantity, addItemToBasket}) {
  
 
    const basketItemList = basketItem.map((item)=>(
-    <ShopCard key={item.id} itemCounts={itemCounts} {...item} deleteElement={deleteElement} /> 
+    <ShopCard key={item.id} itemCounts={itemCounts} {...item} deleteElement={deleteElement} setBasketQuantity={setBasketQuantity}/> 
    )) 
 
    const navigate = useNavigate()
