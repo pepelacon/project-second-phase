@@ -8,7 +8,7 @@ import { CiShoppingCart } from "react-icons/ci"
 import { useAuth0 } from "@auth0/auth0-react"
 
 
-function NavBar({ setSearch }) {
+function NavBar({ setSearch, basketQuantity }) {
 const {user, isAuthenticated} = useAuth0()
 
 if (isAuthenticated) {
@@ -29,7 +29,12 @@ if (isAuthenticated) {
 
                 <div className="down">
                     <Link to = {"/basket"}>
-                        <CiShoppingCart className="icon"/>
+                        <div className="count-conteiner">
+                            <div className="count">
+                                {basketQuantity}
+                            </div>
+                            <CiShoppingCart className="icon"/>
+                        </div>
                         {/* <button>Basket<CiShoppingCart/></button> */}
                     </Link>
                     <SignOut />
