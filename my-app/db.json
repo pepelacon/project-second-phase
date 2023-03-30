@@ -38,7 +38,7 @@
       "rating": 5,
       "image": "https://hoopshype.com/wp-content/uploads/sites/92/2022/10/lebron-57-99-rookie.jpeg",
       "category": "Sports",
-      "purchased": 7
+      "purchased": 8
     },
     {
       "id": 5,
@@ -78,7 +78,7 @@
       "image": "https://cdn.shopify.com/s/files/1/1771/0049/products/tripine-trucker-hat-charcoal-silver_700x.jpg?v=1652710853",
       "category": "Fashion",
       "id": 20,
-      "purchased": 4
+      "purchased": 5
     },
     {
       "name": "Cartoon & Letter Jeans",
@@ -107,7 +107,7 @@
       "rating": 0,
       "image": "https://m.media-amazon.com/images/I/31+alzMnxaL.jpg",
       "category": "Home Goods",
-      "purchased": 22,
+      "purchased": 23,
       "id": 23
     },
     {
@@ -137,7 +137,7 @@
       "rating": 0,
       "image": "https://m.media-amazon.com/images/P/0374533555.01._SCLZZZZZZZ_SX500_.jpg",
       "category": "Books",
-      "purchased": 0,
+      "purchased": 1,
       "id": 26
     },
     {
@@ -153,17 +153,17 @@
     {
       "name": "Chain Ring Harness Bra",
       "description": "\nBust Size: US 44/EUR 100\nMore \n5 Aug,2022\nIt's perfect ! Stretchy and adjustable I added small accessories to the chain piece. I definitely recommend wearing a bra with it to get the chains to stretch across rather than sticking to one area.",
-      "price": "8,49",
+      "price": "8.49",
       "rating": 0,
       "image": "https://img.ltwebstatic.com/images3_pi/2022/04/12/1649746472ca3bf5942b977bafec3629845fd5e55b_thumbnail_600x.webp",
       "category": "Fashion",
-      "purchased": 0,
+      "purchased": 7,
       "id": 28
     },
     {
       "name": "Checkered iPhone Case",
       "description": "Checkered iPhone case for iPhone 11, cool green and cream colors.",
-      "price": "30.00",
+      "price": "30",
       "rating": 0,
       "image": "https://cdn.shopify.com/s/files/1/0602/8086/4941/products/CH-03-BAA_afc3c9c0-b091-400f-b1bc-13539f9f80ba_2048x.progressive.jpg?v=1669236220",
       "category": "Electronics",
@@ -177,13 +177,13 @@
       "rating": 0,
       "image": "https://res.cloudinary.com/teepublic/image/private/s--nqaRZptV--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1562703604/production/designs/5274885_0.jpg",
       "category": "Home Goods",
-      "purchased": 0,
+      "purchased": 7,
       "id": 122
     },
     {
       "name": "Tarantula ",
       "description": "Creepy, crawly, and cute!",
-      "price": "120.00",
+      "price": "120",
       "rating": 0,
       "image": "https://t3.ftcdn.net/jpg/00/58/68/92/360_F_58689242_skShwyxRwrdzhdxDxCfjxpsydEX0hqSQ.jpg",
       "category": "Home Goods",
@@ -193,7 +193,7 @@
     {
       "name": "Rooster Lamp",
       "description": "Rooster lamp with egg for light bulb!",
-      "price": "300.00",
+      "price": "300",
       "rating": 0,
       "image": "https://i5.walmartimages.com/asr/d88f2b89-207f-4b09-a250-d6f6a1275eef.bc09017f6360f2c64eb0ab98356af560.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "category": "Home Goods",
@@ -203,7 +203,7 @@
     {
       "name": "Squirrel water bottle",
       "description": "Squirrel water bottle with twist off lid",
-      "price": "15.00",
+      "price": "15",
       "rating": 0,
       "image": "https://cdn.shopify.com/s/files/1/0274/4988/4706/products/waterdrop-toddler-bottle-squirrel_800x.png?v=1669021829",
       "category": "Home Goods",
@@ -213,7 +213,7 @@
     {
       "name": "Tortilla Pencil Case",
       "description": "This pencil case will make you hungry!",
-      "price": "12.00",
+      "price": "12",
       "rating": 0,
       "image": "https://m.media-amazon.com/images/I/61B7EvOJHLL._AC_SX522_.jpg",
       "category": "Home Goods",
@@ -223,7 +223,7 @@
     {
       "name": "Spaghettio's Candle",
       "description": "This candle will make you hungry!",
-      "price": "13.00",
+      "price": "13",
       "rating": 0,
       "image": "https://i.etsystatic.com/21275405/r/il/0d0d5c/3770916427/il_794xN.3770916427_ovcp.jpg",
       "category": "Home Goods",
@@ -233,7 +233,7 @@
     {
       "name": "Tie Dyed Beanie Baby",
       "description": "Peace and love. ",
-      "price": "45.00",
+      "price": "45",
       "rating": 0,
       "image": "https://i5.walmartimages.com/asr/307dc652-b08a-43a2-9195-32470275749c.5a6239c2be2628b989931688fa4c5d9d.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "category": "Home Goods",
@@ -243,7 +243,7 @@
     {
       "name": "Playground",
       "description": "This playground is even fun for adults!",
-      "price": "200.00",
+      "price": "200",
       "rating": 0,
       "image": "https://cdn.americanfloormats.com/content/product/medium/Rubber%20Playground%20Mulch%20300.JPG",
       "category": "Sports",
@@ -253,7 +253,7 @@
     {
       "name": "Shrek Slippers",
       "description": "Limited edition, comfy and cool! Swamp feet!!",
-      "price": "600.00",
+      "price": "600",
       "rating": 0,
       "image": "https://i5.walmartimages.com/asr/87c33deb-8390-4bae-946a-801753272046_1.7a17169b2890cbe941b6cac2d342a851.jpeg",
       "category": "Fashion",
