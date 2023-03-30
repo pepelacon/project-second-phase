@@ -79,6 +79,236 @@
       "category": "Fashion",
       "id": 20,
       "purchased": 4
+    },
+    {
+      "name": "Cartoon & Letter Jeans",
+      "description": "Nice modern jeans",
+      "price": "27",
+      "rating": 0,
+      "image": "https://img.ltwebstatic.com/images3_pi/2022/08/30/16618321288d471954a526aae051aafa01ac3c0bf8_thumbnail_600x.webp",
+      "category": "Fashion",
+      "purchased": 0,
+      "id": 21
+    },
+    {
+      "name": "Catan Board Game ",
+      "description": "FUN FAMILY GAMES FOR GAME NIGHT: An international favorite, CATAN has been called the \"Perfect Social Game\". Check out our entire collection of CATAN board games for adults and kids to enjoy on family game night. Enjoy hours of fast-paced, interactive fun!",
+      "price": "48",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81+okm4IpfL._AC_SX466_.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 22
+    },
+    {
+      "name": "Sertraline, 100 MG Tablets",
+      "description": "SERTRALINE (SER tra leen) treats depression, anxiety, obsessive-compulsive disorder (OCD), post-traumatic stress disorder (PTSD), and premenstrual dysphoric disorder (PMDD). It increases the amount of serotonin in the brain, a hormone that helps regulate mood. It belongs to a group of medications called SSRIs.",
+      "price": "2",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/I/31+alzMnxaL.jpg",
+      "category": "Home Goods",
+      "purchased": 22,
+      "id": 23
+    },
+    {
+      "name": "\t Adidas Istanbul League Ball ",
+      "description": "Inspired by the elaborate Turkish art, this UCL Training soccer ball uses the UEFA Champions League's official match ball for its design inspiration. It is perfect for advanced ...",
+      "price": "40",
+      "rating": 0,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQB1XsAIgCAc_Vb90TzO4h34kAFLwKujQqcB4tQ_QZTlMXzwKb0ytOVN2tgcaKTI6c5dvbR57GJ525sTaMCXmesQ53iLS4tq02XBYN2mMJa9qY9Yx8N2VzAPg&usqp=CAE",
+      "category": "Sports",
+      "purchased": 0,
+      "id": 24
+    },
+    {
+      "name": "Spy Book",
+      "description": "Smart. Funny. Fearless.\"It's pretty safe to say that Spy was the most influential magazine of the 1980s. It might have remade New York's cultural landscape; it definitely changed the whole tone of magazine journalism.",
+      "price": "10",
+      "rating": 0,
+      "image": "https://books.google.com/books/content?id=pWWK7nGpMCsC&pg=PP1&img=1&zoom=3&hl=en&sig=ACfU3U1BJN-j4_8UWJFFvFwQKuWrOydXbw&w=1280",
+      "category": "Books",
+      "purchased": 0,
+      "id": 25
+    },
+    {
+      "name": "Thinking, Fast and Slow",
+      "description": "An encyclopedia designed especially to meet the needs of elementary, junior high, and senior high school students.",
+      "price": "12",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/P/0374533555.01._SCLZZZZZZZ_SX500_.jpg",
+      "category": "Books",
+      "purchased": 0,
+      "id": 26
+    },
+    {
+      "name": "Sole Fitness Treadmill",
+      "description": "Treadmill offers an industry-leading warranty and a proprietary Cushion Flex Whisper Deck, shown in a study to reduce impact on your joints by up to 40% compared to running on asphalt",
+      "price": "2,557",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61jwgeTudYL._AC_SX466_.jpg",
+      "category": "Sports",
+      "purchased": 0,
+      "id": 27
+    },
+    {
+      "name": "Chain Ring Harness Bra",
+      "description": "\nBust Size: US 44/EUR 100\nMore \n5 Aug,2022\nIt's perfect ! Stretchy and adjustable I added small accessories to the chain piece. I definitely recommend wearing a bra with it to get the chains to stretch across rather than sticking to one area.",
+      "price": "8,49",
+      "rating": 0,
+      "image": "https://img.ltwebstatic.com/images3_pi/2022/04/12/1649746472ca3bf5942b977bafec3629845fd5e55b_thumbnail_600x.webp",
+      "category": "Fashion",
+      "purchased": 0,
+      "id": 28
+    },
+    {
+      "name": "Checkered iPhone Case",
+      "description": "Checkered iPhone case for iPhone 11, cool green and cream colors.",
+      "price": "30.00",
+      "rating": 0,
+      "image": "https://cdn.shopify.com/s/files/1/0602/8086/4941/products/CH-03-BAA_afc3c9c0-b091-400f-b1bc-13539f9f80ba_2048x.progressive.jpg?v=1669236220",
+      "category": "Electronics",
+      "purchased": 0,
+      "id": 121
+    },
+    {
+      "name": "Cow Sticker",
+      "description": "Cow sticker - moo!",
+      "price": "0.50",
+      "rating": 0,
+      "image": "https://res.cloudinary.com/teepublic/image/private/s--nqaRZptV--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1562703604/production/designs/5274885_0.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 122
+    },
+    {
+      "name": "Tarantula ",
+      "description": "Creepy, crawly, and cute!",
+      "price": "120.00",
+      "rating": 0,
+      "image": "https://t3.ftcdn.net/jpg/00/58/68/92/360_F_58689242_skShwyxRwrdzhdxDxCfjxpsydEX0hqSQ.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 123
+    },
+    {
+      "name": "Rooster Lamp",
+      "description": "Rooster lamp with egg for light bulb!",
+      "price": "300.00",
+      "rating": 0,
+      "image": "https://i5.walmartimages.com/asr/d88f2b89-207f-4b09-a250-d6f6a1275eef.bc09017f6360f2c64eb0ab98356af560.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 124
+    },
+    {
+      "name": "Squirrel water bottle",
+      "description": "Squirrel water bottle with twist off lid",
+      "price": "15.00",
+      "rating": 0,
+      "image": "https://cdn.shopify.com/s/files/1/0274/4988/4706/products/waterdrop-toddler-bottle-squirrel_800x.png?v=1669021829",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 125
+    },
+    {
+      "name": "Tortilla Pencil Case",
+      "description": "This pencil case will make you hungry!",
+      "price": "12.00",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/I/61B7EvOJHLL._AC_SX522_.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 126
+    },
+    {
+      "name": "Spaghettio's Candle",
+      "description": "This candle will make you hungry!",
+      "price": "13.00",
+      "rating": 0,
+      "image": "https://i.etsystatic.com/21275405/r/il/0d0d5c/3770916427/il_794xN.3770916427_ovcp.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 127
+    },
+    {
+      "name": "Tie Dyed Beanie Baby",
+      "description": "Peace and love. ",
+      "price": "45.00",
+      "rating": 0,
+      "image": "https://i5.walmartimages.com/asr/307dc652-b08a-43a2-9195-32470275749c.5a6239c2be2628b989931688fa4c5d9d.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 128
+    },
+    {
+      "name": "Playground",
+      "description": "This playground is even fun for adults!",
+      "price": "200.00",
+      "rating": 0,
+      "image": "https://cdn.americanfloormats.com/content/product/medium/Rubber%20Playground%20Mulch%20300.JPG",
+      "category": "Sports",
+      "purchased": 0,
+      "id": 129
+    },
+    {
+      "name": "Shrek Slippers",
+      "description": "Limited edition, comfy and cool! Swamp feet!!",
+      "price": "600.00",
+      "rating": 0,
+      "image": "https://i5.walmartimages.com/asr/87c33deb-8390-4bae-946a-801753272046_1.7a17169b2890cbe941b6cac2d342a851.jpeg",
+      "category": "Fashion",
+      "purchased": 0,
+      "id": 130
+    },
+    {
+      "name": "Tuna Master Fishing Rod",
+      "description": "Deep sea fishing rod.",
+      "price": "600",
+      "rating": 0,
+      "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41EeQZt2mYL._SS400_.jpg",
+      "category": "Sports",
+      "purchased": 0,
+      "id": 221
+    },
+    {
+      "name": "Robot Roomba",
+      "description": "Autonomous vacuum ",
+      "price": "550",
+      "rating": 0,
+      "image": "https://s13emagst.akamaized.net/products/38636/38635423/images/res_1881a5bcc750035894f9799d7a69bb09.jpg",
+      "category": "Home Goods",
+      "purchased": 0,
+      "id": 222
+    },
+    {
+      "name": "AEM CD-5",
+      "description": "AEM Performance digital racing dash upgrade",
+      "price": "1020",
+      "rating": 0,
+      "image": "https://cdn3.volusion.com/kryfq.xaupn/v/vspfiles/photos/DM3716-2.jpg?v-cache=1573301020",
+      "category": "Electronics",
+      "purchased": 0,
+      "id": 223
+    },
+    {
+      "name": "Nike SB dunks Swarovski",
+      "description": "Very limited!! Very Rare!!",
+      "price": "4700",
+      "rating": 0,
+      "image": "https://sneakernews.com/wp-content/uploads/2020/11/CPFM-Nike-Dunk-Low-Release-Date-5.jpg?w=1140",
+      "category": "Fashion",
+      "purchased": 0,
+      "id": 224
+    },
+    {
+      "name": "Homer Sphere Legs bracelet",
+      "description": "Each link of the Sphere Legs Bracelet consists of a sphere inset with a brilliant cut lab grown diamond and inscribed with an X. There are 11 of these spheres in total, each linked through diagonal connections with two smaller spheres on each side. It’s constructed from solid 18K yellow gold.",
+      "price": "51030",
+      "rating": 0,
+      "image": "https://cdn.shopify.com/s/files/1/0036/5500/8323/products/211129_SphereLegsBracelet_Gold_Angle.png?v=1638302861",
+      "category": "Fashion",
+      "purchased": 0,
+      "id": 225
     }
   ]
 }
