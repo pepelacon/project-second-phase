@@ -49,7 +49,7 @@ if (isAuthenticated) {
     return (
         <div className="nav-bar">
             <div className="item logo">
-                <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf1_jXuwLxDGN4IJ9LWKmCBaICJLDfzyzdA&usqp=CAU" alt="Buy Sell"/>
+                <img className="logo" src={logo} alt="Buy Sell"/>
             </div>
             <div className="item search">
                 <SearchBar setSearch={setSearch} />

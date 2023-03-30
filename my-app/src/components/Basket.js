@@ -37,11 +37,6 @@ const deleteElement = (product) => {
 
     return(
     <div>
-        <div className="header">
-            <h4 className="grid1">Name</h4>
-            <h4 className="grid2">Quantity</h4>
-            <h4 className="grid3">Price</h4>
-        </div>
         <div className="basket-list">
             {basketItemList}
          </div>

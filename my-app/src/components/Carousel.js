@@ -15,10 +15,10 @@ function Carousel () {
                         <img className="d-block w-100" src="https://di-uploads-pod14.dealerinspire.com/billluketempe/uploads/2018/10/800x418.jpg" alt="Second slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" src="..." alt="Third slide"/>
+                        <img className="d-block w-100" src="https://images-ext-2.discordapp.net/external/2UAsmWHIh8JTyQmlpY_32Uo-K3_aSwDqXXXvNNiuL-E/https/uncoverla.sfo3.digitaloceanspaces.com/wp-content/uploads/2020/01/29124826/west-elm-burbank-01_2020_01.jpg?width=1842&height=1228" alt="Third slide"/>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>

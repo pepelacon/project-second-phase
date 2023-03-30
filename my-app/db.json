@@ -8,7 +8,7 @@
       "rating": 5,
       "image": "https://static.designboom.com/wp-content/dbsub/452926/2023-02-09/studio-danucio-future-avantgarde-everything-is-possible-8-63e51ebeab4d6.jpg",
       "category": "Home Goods",
-      "purchased": 16
+      "purchased": 20
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "rating": 5,
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/vr2-comfort-and-design-headset-2?fmt=png-alpha&scl=1",
       "category": "Electronics",
-      "purchased": 7
+      "purchased": 14
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "rating": 5,
       "image": "https://sneakernews.com/wp-content/uploads/2022/06/travis-scott-air-jordan-1-low-og-dm7866-162-5.jpg",
       "category": "Fashion",
-      "purchased": 0
+      "purchased": 6
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "rating": 5,
       "image": "https://hoopshype.com/wp-content/uploads/sites/92/2022/10/lebron-57-99-rookie.jpeg",
       "category": "Sports",
-      "purchased": 1
+      "purchased": 7
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "rating": 5,
       "image": "https://i.ebayimg.com/images/g/kd8AAOSwZjVj6prj/s-l1600.jpg",
       "category": "Books",
-      "purchased": 0
+      "purchased": 9
     },
     {
       "name": "Helicopter",
@@ -58,7 +58,7 @@
       "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71t33YmuRqL.jpg",
       "category": "Electronics",
       "id": 17,
-      "purchased": 1
+      "purchased": 6
     },
     {
       "name": "One Shoe",
