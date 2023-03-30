@@ -14,7 +14,8 @@ function NewItemForm({ setItems }) {
     price: "",
     rating: 0,
     image: "",
-    category: ""
+    category: "",
+    purchased: 0
    }
    const [newObject, setNewObject] = useState(initialObject)
 

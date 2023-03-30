@@ -1,5 +1,5 @@
 .card {
-    width: 250px;
+    width: 260px;
     height: 300px;
     padding: .8em;
     background: #f5f5f5;
@@ -36,11 +36,19 @@
     bottom: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap; 
+    /* display: inline-block;
+  margin: auto; */
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #ddd;
+    align-self: center;
    }
+
+   /* .price{
+    padding-left: 10px;
+   } */
    
    /*Text*/
 
@@ -53,6 +61,11 @@
     font-weight: 500;
     font-size: 1em;
     line-height: 1.5rem;
+   }
+   .text-pur {
+    color: black;
+    font-weight: 300;
+    font-size: 0.9rem;
    }
    
    .text-body {

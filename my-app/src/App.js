@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import Basket from './components/Basket';
 import Filter from './components/Filter';
 import Item from './components/Item';
+import Carousel from './components/Carousel';
 
 
 
@@ -15,6 +16,7 @@ function App() {
   const [search, setSearch] = useState("")
   const [basketItem, addItemToBasket] = useState([])
   const [filter, setFilter] = useState('All')
+  const [toggle, setToggle] = useState(false)
  
 
 
@@ -39,14 +41,28 @@ console.log(basketItem);
 }
 
 const checkOut = () =>{
+  basketItem.map((el) => {
+    fetch(`http://localhost:3001/items/${el.id}`, {
+      method: "PATCH",
+      headers:  {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify({purchased: (el.purchased + el.count)})
+    })
+    .then(response => response.json())
+    .then(data => setToggle(!toggle))
+  })
   addItemToBasket([])
 }
+
+
+console.log(toggle);
 
 useEffect(()=>{
   fetch("http://localhost:3001/items")
   .then(res => res.json())
   .then(data => setItems(data)) 
-},[]);
+},[toggle]);
 
 
 const handleClick = (param) => {
@@ -57,6 +73,7 @@ const handleClick = (param) => {
     <div className="App">
       <NavBar setSearch={setSearch} basketItem={basketItem} />
       <Filter items={items} setItems={setItems} handleClick={handleClick}/>
+      <Carousel />
       <Routes>
           <Route path="/" element={<ItemsContainer items={items} search={search} setBasketItem={setBasketItem} filter={filter}/>}/>
           <Route path='/items/:id' element={<Item/>} />

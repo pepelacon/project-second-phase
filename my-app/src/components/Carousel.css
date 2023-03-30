@@ -1,0 +1,15 @@
+.carousel {
+    margin: auto;
+    padding-top: 2rem;
+    height: 350px;
+    width: 600px;
+    border-radius: 5%;
+}
+
+.d-block {
+    height: 300px;
+}
+
+.sr-only {
+   color: black
+}

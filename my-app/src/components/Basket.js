@@ -48,7 +48,7 @@ const deleteElement = (product) => {
          <div>
             <h3>Total Price: ${total}</h3>
         </div>
-        <button>Check Out</button>
+        <button onClick={checkOut}>Check Out</button>
         {/* <FaHome onClick={()=>{navigate("/")}}/> */}
         <button onClick={()=>{navigate("/")}}><FaHome/></button>
     </div>
